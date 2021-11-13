@@ -39,23 +39,24 @@ class StartState extends State<SplashScreen> {
 
   Widget initWidget(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          Container(
-            decoration: BoxDecoration(
-                color: new Color(0xFFD500F9),
-                gradient: LinearGradient(colors: [(new  Color(0xFFD500F9)), new Color(0xFFE040FB)],
-                    begin: Alignment.topCenter,
-                    end: Alignment.bottomCenter
-                )
+      backgroundColor: Colors.green,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            // logo here
+            Image.asset(
+              'images/logo_quiz.png',
+              height: 120,
             ),
-          ),
-          Center(
-            child: Container(
-              child: Image.asset("images/app_logo.png"),
+            SizedBox(
+              height: 20,
             ),
-          )
-        ],
+            CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+            )
+          ],
+        ),
       ),
     );
   }

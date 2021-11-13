@@ -17,8 +17,9 @@ class InitState extends State<SignUpScreen> {
                 Container(
                   height: 200,
                   decoration: BoxDecoration(
-                    color: new Color(0xFFD500F9),
-                    gradient: LinearGradient(colors: [(new  Color(0xFFD500F9)), new Color(0xFFE040FB)],
+                    borderRadius: BorderRadius.only(bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60)),
+                    color: new Color(0xFF4CAF50),
+                    gradient: LinearGradient(colors: [(new  Color(0xFF4CAF50)), new Color(0xFF2E7D32)],
                       begin: Alignment.topCenter,
                       end: Alignment.bottomCenter,
                     ),
@@ -29,24 +30,11 @@ class InitState extends State<SignUpScreen> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           Container(
-                            margin: EdgeInsets.only(top: 50),
                             child: Image.asset(
-                              "images/app_logo.png",
-                              height: 90,
-                              width: 90,
+                              "images/logo_quiz.png",
+                              height: 100,
                             ),
                           ),
-                          Container(
-                            margin: EdgeInsets.only(right: 20, top: 20),
-                            alignment: Alignment.bottomRight,
-                            child: Text(
-                              "Register",
-                              style: TextStyle(
-                                  fontSize: 20,
-                                  color: Colors.white
-                              ),
-                            ),
-                          )
                         ],
                       )
                   ),
@@ -69,13 +57,13 @@ class InitState extends State<SignUpScreen> {
                     ],
                   ),
                   child: TextField(
-                    cursorColor: Color(0xFFD500F9),
+                    cursorColor: Color(0xFF4CAF50),
                     decoration: InputDecoration(
                       icon: Icon(
                         Icons.person,
-                        color: Color(0xFFD500F9),
+                        color: Color(0xFF4CAF50),
                       ),
-                      hintText: "Full Name",
+                      hintText: "Maukkan Nama Lengkap",
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
                     ),
@@ -99,13 +87,13 @@ class InitState extends State<SignUpScreen> {
                     ],
                   ),
                   child: TextField(
-                    cursorColor: Color(0xFFD500F9),
+                    cursorColor: Color(0xFF4CAF50),
                     decoration: InputDecoration(
                       icon: Icon(
-                        Icons.email,
-                        color: Color(0xFFD500F9),
+                        Icons.account_circle,
+                        color: Color(0xFF4CAF50),
                       ),
-                      hintText: "Email",
+                      hintText: "Masukkan Username",
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
                     ),
@@ -129,14 +117,14 @@ class InitState extends State<SignUpScreen> {
                     ],
                   ),
                   child: TextField(
-                    cursorColor: Color(0xFFD500F9),
+                    cursorColor: Color(0xFF4CAF50),
                     decoration: InputDecoration(
-                      focusColor: Color(0xFFD500F9),
+                      focusColor: Color(0xFF4CAF50),
                       icon: Icon(
-                        Icons.phone,
-                        color: Color(0xFFD500F9),
+                        Icons.vpn_key,
+                        color: Color(0xFF4CAF50),
                       ),
-                      hintText: "Phone Number",
+                      hintText: "Masukkan Password",
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
                     ),
@@ -159,14 +147,14 @@ class InitState extends State<SignUpScreen> {
                     ],
                   ),
                   child: TextField(
-                    cursorColor: Color(0xFFD500F9),
+                    cursorColor: Color(0xFF4CAF50),
                     decoration: InputDecoration(
-                      focusColor: Color(0xFFD500F9),
+                      focusColor: Color(0xFF4CAF50),
                       icon: Icon(
                         Icons.vpn_key,
-                        color: Color(0xFFD500F9),
+                        color: Color(0xFF4CAF50),
                       ),
-                      hintText: "Enter Password",
+                      hintText: "Konfirmasi Password",
                       enabledBorder: InputBorder.none,
                       focusedBorder: InputBorder.none,
                     ),
@@ -183,7 +171,7 @@ class InitState extends State<SignUpScreen> {
                     padding: EdgeInsets.only(left: 20, right: 20),
                     height: 54,
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [(new  Color(0xFFD500F9)), new Color(0xFFE040FB)],
+                      gradient: LinearGradient(colors: [(new  Color(0xFF4CAF50)), new Color(0xFF2E7D32)],
                           begin: Alignment.centerLeft,
                           end: Alignment.centerRight
                       ),
@@ -198,7 +186,7 @@ class InitState extends State<SignUpScreen> {
                       ],
                     ),
                     child: Text(
-                      "REGISTER",
+                      "DAFTAR",
                       style: TextStyle(
                           color: Colors.white
                       ),
@@ -210,12 +198,12 @@ class InitState extends State<SignUpScreen> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("Have Already Member?  "),
+                      Text("Sudah Mempunyai Akun?  "),
                       GestureDetector(
                         child: Text(
-                          "Login Now",
+                          "Masuk Sekarang",
                           style: TextStyle(
-                              color: Color(0xFFD500F9)
+                              color: Color(0xFF4CAF50)
                           ),
                         ),
                         onTap: () {
